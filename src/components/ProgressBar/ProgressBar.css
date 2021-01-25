@@ -1,0 +1,31 @@
+
+.ability_bar_title {
+    color: #fff;
+    position: relative;
+    font-size: 1rem;
+}
+
+.barname {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.bar_percentage {
+    position: absolute;
+    right: 0;
+}
+
+.bar_container{
+    display: flex;
+    border-radius: 5px;
+    height: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.bar_content{
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #cf000f;
+}

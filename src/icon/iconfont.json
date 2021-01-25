@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "540373",
+      "name": "ic_experience",
+      "font_class": "icexperience",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "569546",
+      "name": "personal",
+      "font_class": "caidaniconwodehui",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "588421",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "1219231",
+      "name": "eglass-adress",
+      "font_class": "adress",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6664192",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "7450642",
+      "name": "问号",
+      "font_class": "wenhao",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "7605184",
+      "name": "tool",
+      "font_class": "tool",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "13168154",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "13613293",
+      "name": "at",
+      "font_class": "at",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "19070470",
+      "name": "education",
+      "font_class": "education",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    }
+  ]
+}

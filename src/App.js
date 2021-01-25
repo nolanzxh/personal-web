@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Menu from "./components/Menu/Menu";
+import Home from "./components/Home/Home";
+import Resume from "./components/Resume/Resume";
+import Skill from "./components/Skill/Skill";
+import Contact from "./components/Contact/Contact";
+import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
+import React from "react";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu isOn={location.pathname}></Menu>
+      <AnimatePresence>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/resume" component={Resume} exact />
+          <Route path="/skill" component={Skill} exact />
+          <Route path="/contact" component={Contact} exact />
+          <Route path="/home" component={Home} exact />
+          <Route path="/" render={() => (<Redirect to='/home' />)} />
+        </Switch>
+      </AnimatePresence>
     </div>
+
   );
 }
 

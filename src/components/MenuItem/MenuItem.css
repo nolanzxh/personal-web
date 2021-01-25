@@ -1,0 +1,37 @@
+.menuitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 239, 239);
+    border-radius: 50%;
+}
+
+.icon:hover {
+    box-shadow: inset 0px 0px 7px black;
+}
+
+.itemname {
+    flex: 1;
+    color: white;
+}
+
+.menu_icon {
+    font-size: 1.3rem !important;
+}
+
+.menuitem_active {
+    color: #cf000f;
+    box-shadow: inset 0px 0px 7px black;
+}

@@ -1,0 +1,140 @@
+.resume_page {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    background-color: #161616;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../image/bg_others.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.info_panel {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 9%;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+    color: #fff;
+    padding: 50px 50px;
+}
+
+.education_description, .experience_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education_photo, .experience_photo {
+    width: 40%;
+    position: relative;
+    padding: 10px;
+    border: solid rgba(255, 255, 255, 0.541) 1px;
+}
+
+.education_photo {
+    border-left: 0;
+}
+
+.experience_photo {
+    border-right: 0;
+}
+
+.resume_panel_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.panel_title_icon {
+    font-size: 2.3rem !important;
+    margin-right: 8px;
+}
+
+.resume_panel_title:before, .resume_panel_title:after {
+    content: '';
+    background-color: #fff;
+    width: 3rem;
+    border-radius: 25px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.resume_panel_title:before {
+    background-color: gray;
+    width: 1rem;
+    z-index: 1;
+}
+
+.resume_panel_title:after {
+    background-color: #cf000f;
+}
+
+.timeline {
+    margin-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline_item {
+    padding-left: 20px;
+    border-left: #33363D solid;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.timeline_item:after, .timeline_item:before {
+    content: '';
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    background-color: #cf000f;
+    left: -8px;
+    top: 0;
+}
+
+.timeline_item:before {
+    box-shadow: 0 0 0 0.1875rem rgba(228, 12, 48, 0.25);
+}
+
+@keyframes warn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.timeline_item:hover::before {
+    background-color: #cf000f;
+    animation: warn 1.5s ease-out infinite;
+}
+
+.timeline_title {
+    margin: 0;
+    font-size: 1rem;
+    position: relative;
+    top: -4px;
+}
+
+.timeline_period {
+    color: rgba(255, 255, 255, .6);
+}

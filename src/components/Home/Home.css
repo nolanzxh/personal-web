@@ -1,0 +1,23 @@
+.home_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../image/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.author {
+    font-size: 70px;
+    color: white;
+    font-style: oblique;
+    font-weight: normal;
+    font-family: 'Poppins';
+}

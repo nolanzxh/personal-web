@@ -1,0 +1,91 @@
+.contact_page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../image/bg_others.jpg);
+    background-size: cover;
+}
+
+.contact_panel {
+    width: 85%;
+    position: relative;
+    left: 2%;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 350px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.map_title{
+    text-align: start;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 10px;
+}
+
+.contact_list {
+    border-top: solid #fff 1px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.contact_item {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.contact_item_icon {
+    color: #cf000f;
+    font-size: 3.5rem;
+    margin: 0 10px 10px 10px;
+}
+
+.contact_item_description {
+    text-align: start;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_item_title, .contact_item_content {
+    margin: 0;
+}
+
+.contact_item_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact_item_content {
+    color: rgba(255, 255, 255, .6);
+}
