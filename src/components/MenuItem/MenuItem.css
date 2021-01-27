@@ -16,7 +16,6 @@
     justify-content: center;
     background-color: rgb(240, 239, 239);
     border-radius: 50%;
-    color: black !important;
 }
 
 .icon_button:hover {
@@ -33,7 +32,7 @@
 }
 
 .menuitem_active.icon_button {
-    color: #cf000f !important;
+    color: #cf000f;
     box-shadow: inset 0px 0px 7px black;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .menuitem_active.icon_button_small {
-    color: #cf000f !important;
+    color: #cf000f;
 }
 
 .icon_button_small {
@@ -91,4 +90,8 @@
 .menuitem_small:hover .itemname_small {
     visibility: visible;
     left: 50px;
+}
+
+.menuitem_small:hover .icon_button_small {
+    color: #fff;
 }
