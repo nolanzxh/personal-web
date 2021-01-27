@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "122696",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "122721",
+      "name": "account",
+      "font_class": "account",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "212502",
+      "name": "lights",
+      "font_class": "lights",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "364801",
+      "name": "map",
+      "font_class": "map",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
       "icon_id": "540373",
       "name": "ic_experience",
       "font_class": "icexperience",
@@ -13,25 +41,11 @@
       "unicode_decimal": 58919
     },
     {
-      "icon_id": "569546",
-      "name": "personal",
-      "font_class": "caidaniconwodehui",
-      "unicode": "e60e",
-      "unicode_decimal": 58894
-    },
-    {
-      "icon_id": "588421",
-      "name": "home",
-      "font_class": "home",
-      "unicode": "e65c",
-      "unicode_decimal": 58972
-    },
-    {
-      "icon_id": "1219231",
-      "name": "eglass-adress",
-      "font_class": "adress",
-      "unicode": "e600",
-      "unicode_decimal": 58880
+      "icon_id": "5799946",
+      "name": "warehouse-delivery ",
+      "font_class": "warehouse-delivery",
+      "unicode": "e87b",
+      "unicode_decimal": 59515
     },
     {
       "icon_id": "6664192",
@@ -46,13 +60,6 @@
       "font_class": "wenhao",
       "unicode": "e666",
       "unicode_decimal": 58982
-    },
-    {
-      "icon_id": "7605184",
-      "name": "tool",
-      "font_class": "tool",
-      "unicode": "e646",
-      "unicode_decimal": 58950
     },
     {
       "icon_id": "13168154",
