@@ -33,6 +33,14 @@
     justify-content: center;
 }
 
+.education_description {
+    padding-left: 15px;
+}
+
+.experience_description {
+    padding-right: 15px;
+}
+
 .education_photo, .experience_photo {
     width: 40%;
     position: relative;

@@ -22,8 +22,8 @@ const pageVariants = {
 
 const photoHoverVariants = {
     position: 'relative',
-    zIndex: 1,
     scale: 1.3,
+    zIndex: 100,
     transition: {
         duration: .3,
     }
