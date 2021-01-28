@@ -2,11 +2,7 @@ import React from 'react';
 import "./MenuItem.css";
 import { withRouter } from 'react-router-dom';
 
-class MenuItem extends React.Component {
-
-    componentDidMount() {
-
-    }
+export class MenuItem extends React.Component {
 
     onPageChange = () => {
         this.props.history.push(this.props.to)

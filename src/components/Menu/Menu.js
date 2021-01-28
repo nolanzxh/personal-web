@@ -3,45 +3,17 @@ import "./Menu.css";
 import MenuItem from "../MenuItem/MenuItem";
 import '../../icon/iconfont.css';
 import { motion } from "framer-motion";
+import { connect } from "react-redux";
+import { handleMenubarDisplay } from "../../actions";
 
-export default class Menu extends React.Component {
+export class Menu extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.handleResize = this.handleResize.bind(this);
-        this.state = {
-            isSmallScreen: false,
-            showMenuBar: true
-        }
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.handleResize);
-        let smallSreen = (window.innerWidth < 900 || window.innerHeight < 520) ? true : false;
-        this.setState({
-            isSmallScreen: smallSreen,
-            showMenuBar: !smallSreen
-        });
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.handleResize);
-    }
-
-    handleResize(e) {
-        let smallSreen = (e.target.innerWidth < 900 || e.target.innerHeight < 520) ? true : false;
-        this.setState({
-            isSmallScreen: smallSreen,
-            showMenuBar: !smallSreen
-        });
-    }
-
-    hanldeShow = () => {
-        this.setState({ showMenuBar: !this.state.showMenuBar })
+    handleClick = () => {
+        this.props.handleMenubarDisplay();
     }
 
     render() {
-        const { isSmallScreen, showMenuBar } = this.state;
+        const { isSmallScreen, showMenuBar } = this.props;
         return (
             <div className={isSmallScreen ? 'menu_container_small' : 'menu_container'}>
                 <div className={isSmallScreen ? 'menu_small' : 'menu'}>
@@ -68,7 +40,7 @@ export default class Menu extends React.Component {
                             active={this.props.isOn === '/contact'} isSmallScreen={isSmallScreen}></MenuItem>
                     </motion.div>
                     <motion.div
-                        onClick={this.hanldeShow}
+                        onClick={this.handleClick}
                         className={`iconfont ${isSmallScreen ? 'menubar_icon_small' : 'menubar_icon'}`}
                     >
                         &#xe87b;</motion.div>
@@ -78,3 +50,10 @@ export default class Menu extends React.Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    isSmallScreen: state.isSmallScreen,
+    showMenuBar: state.showMenuBar
+});
+
+export default connect(mapStateToProps, { handleMenubarDisplay })(Menu);

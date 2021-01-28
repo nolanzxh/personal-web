@@ -29,7 +29,7 @@ const photoHoverVariants = {
     }
 }
 
-class Resume extends React.Component {
+export default class Resume extends React.Component {
     render() {
         return (
             <motion.div
@@ -128,5 +128,3 @@ class Resume extends React.Component {
         );
     }
 }
-
-export default Resume;

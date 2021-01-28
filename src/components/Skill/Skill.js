@@ -157,7 +157,6 @@ export default class Skill extends React.Component {
                             <h5 className='photo_back_end'>Stop</h5>
                         </motion.div>
 
-
                     </motion.div>
                     <div className='skill_content'>
                         <h2 className='skill_title'>My capacity</h2>
