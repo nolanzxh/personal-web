@@ -39,11 +39,12 @@ export class Menu extends React.Component {
                         <MenuItem itemName='Contact' icon='&#xe715;' to='contact'
                             active={this.props.isOn === '/contact'} isSmallScreen={isSmallScreen}></MenuItem>
                     </motion.div>
-                    <motion.div
+                    <div
                         onClick={this.handleClick}
-                        className={`iconfont ${isSmallScreen ? 'menubar_icon_small' : 'menubar_icon'}`}
+                        className={isSmallScreen ? 'menubar_icon_small' : 'menubar_icon'}
                     >
-                        &#xe87b;</motion.div>
+                        <span className={`middle_line ${showMenuBar ? 'opened' : null}`}></span>
+                    </div>
                 </div>
             </div>
 
