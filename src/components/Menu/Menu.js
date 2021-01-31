@@ -30,13 +30,15 @@ export class Menu extends React.Component {
                         transition={{ duration: .3 }}
                         className={`${isSmallScreen ? 'itemlist_small' : 'itemlist'} ${showMenuBar ? 'show_bar' : 'hide_bar'}`}
                     >
-                        <MenuItem itemName='Home' icon='&#xe87b;' to='home'
+                        <MenuItem itemName='Home' icon='&#xe702;' to='home'
                             active={this.props.isOn === '/home'} isSmallScreen={isSmallScreen}></MenuItem>
-                        <MenuItem itemName='Resume' icon='&#xe6b8;' to='resume'
+                        <MenuItem itemName='About' icon='&#xe715;' to='about'
+                            active={this.props.isOn === '/about'} isSmallScreen={isSmallScreen}></MenuItem>
+                        <MenuItem itemName='Resume' icon='&#xe6e6;' to='resume'
                             active={this.props.isOn === '/resume'} isSmallScreen={isSmallScreen}></MenuItem>
-                        <MenuItem itemName='Skill' icon='&#xe6de;' to='skill'
+                        <MenuItem itemName='Skill' icon='&#xe6f4;' to='skill'
                             active={this.props.isOn === '/skill'} isSmallScreen={isSmallScreen}></MenuItem>
-                        <MenuItem itemName='Contact' icon='&#xe715;' to='contact'
+                        <MenuItem itemName='Contact' icon='&#xe70a;' to='contact'
                             active={this.props.isOn === '/contact'} isSmallScreen={isSmallScreen}></MenuItem>
                     </motion.div>
                     <div

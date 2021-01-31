@@ -1,0 +1,119 @@
+.about_page {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #161616;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../image/bg_others.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+    overflow-y: visible;
+    color: #fff;
+}
+
+.about_texts_title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about_panel {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    position: relative;
+    justify-content: center;
+}
+
+.about_texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    padding-bottom: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.separator {
+    background-color: rgba(255, 255, 255, .6);
+    height: 1px;
+}
+
+.descriptions_container {
+    width: 45%;
+    color: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info_list {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info_item_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_item {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.info_item_title {
+    color: #cf000f;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.info_item_content {
+    margin-top: 2px;
+}
+
+.about_photo_title {
+    text-align: start;
+    font-weight: 500;
+}
+
+.about_photo_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo_container {
+    position: relative;
+    margin: 10px;
+    width: 25%;
+}
+
+.blur_photo {
+    object-fit: cover;
+}
+
+.blur_photo_back {
+    position: absolute;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    color: #fff;
+}
+
+.blur_photo_back_title {
+    font-size: 1.8rem;
+}

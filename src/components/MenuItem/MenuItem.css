@@ -3,41 +3,74 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    position: relative;
 }
 
 .icon_button {
     width: 50px;
     height: 50px;
-    box-shadow: 1px 1px 4px black;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240, 239, 239);
-    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    color: #fff;
 }
 
 .icon_button:hover {
-    box-shadow: inset 0px 0px 7px black;
+    color: #cf000f;
+}
+
+.itemname, .itemname_small {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -11px;
+    height: 22px;
+    line-height: 22px;
+    z-index: 100;
+    border-radius: 4px;
+    padding: 0 8px;
+    visibility: hidden;
+    transition: all 0.2s ease 0s;
+    pointer-events: none;
 }
 
 .itemname {
-    flex: 1;
-    color: white;
+    background-color: #fff;
+    color: #181818;
 }
 
-.menu_icon {
-    font-size: 1rem !important;
+.itemname::before, .itemname_small::before {
+    margin-top: -5px;
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    border: 5px solid transparent;
+    border-right: 5px solid #111;
+}
+
+.menuitem:hover .itemname {
+    visibility: visible;
+    left: 50px;
+}
+
+.icon_button .menu_icon {
+    font-size: 1.8rem !important;
+}
+
+.icon_button_small .menu_icon {
+    font-size: 1.4rem!important;
 }
 
 .menuitem_active.icon_button {
     color: #cf000f;
-    box-shadow: inset 0px 0px 7px black;
 }
 
 .menuitem_small {
-    width: 50px;
+    width: 70px;
     height: 50px;
     color: #a9a9a9;
     line-height: 50px;
@@ -56,31 +89,8 @@
 }
 
 .itemname_small {
-    font-size: 0.8rem;
-    position: absolute;
     background-color: #181818;
-    top: 50%;
-    left: 40px;
-    margin-top: -11px;
-    height: 22px;
-    line-height: 22px;
-    z-index: 100;
-    border-radius: 4px;
     color: #fff;
-    padding: 0 8px;
-    visibility: hidden;
-    transition: all 0.2s ease 0s;
-    pointer-events: none;
-}
-
-.itemname_small::before {
-    margin-top: -5px;
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    border: 5px solid transparent;
-    border-right: 5px solid #111;
 }
 
 .itemlist_small.hide_bar {
@@ -89,7 +99,7 @@
 
 .menuitem_small:hover .itemname_small {
     visibility: visible;
-    left: 50px;
+    left: 55px;
 }
 
 .menuitem_small:hover .icon_button_small {

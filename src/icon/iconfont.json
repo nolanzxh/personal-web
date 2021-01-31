@@ -6,34 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "122696",
-      "name": "email",
-      "font_class": "email",
-      "unicode": "e69f",
-      "unicode_decimal": 59039
-    },
-    {
-      "icon_id": "122721",
-      "name": "account",
-      "font_class": "account",
-      "unicode": "e6b8",
-      "unicode_decimal": 59064
-    },
-    {
-      "icon_id": "212502",
-      "name": "lights",
-      "font_class": "lights",
-      "unicode": "e6de",
-      "unicode_decimal": 59102
-    },
-    {
-      "icon_id": "364801",
-      "name": "map",
-      "font_class": "map",
-      "unicode": "e715",
-      "unicode_decimal": 59157
-    },
-    {
       "icon_id": "540373",
       "name": "ic_experience",
       "font_class": "icexperience",
@@ -41,18 +13,46 @@
       "unicode_decimal": 58919
     },
     {
-      "icon_id": "5799946",
-      "name": "warehouse-delivery ",
-      "font_class": "warehouse-delivery",
-      "unicode": "e87b",
-      "unicode_decimal": 59515
-    },
-    {
       "icon_id": "6664192",
       "name": "phone",
       "font_class": "phone",
       "unicode": "e622",
       "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "7008899",
+      "name": "businesscard_fill",
+      "font_class": "businesscard_fill",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "7008922",
+      "name": "dynamic_fill",
+      "font_class": "dynamic_fill",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "7008946",
+      "name": "homepage_fill",
+      "font_class": "homepage_fill",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "7008962",
+      "name": "mail_fill",
+      "font_class": "mail_fill",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "7008978",
+      "name": "people_fill",
+      "font_class": "people_fill",
+      "unicode": "e715",
+      "unicode_decimal": 59157
     },
     {
       "icon_id": "7450642",

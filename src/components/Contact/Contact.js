@@ -2,25 +2,11 @@ import React from "react";
 import './Contact.css';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import { motion } from "framer-motion";
+import { pageVariants } from "../../variants";
 
 const mapStyles = {
     position: 'relative',
 };
-
-const pageVariants = {
-    pageInitial: {
-        opacity: 0,
-        x: '-100%'
-    },
-    pageAnimate: {
-        opacity: 1,
-        x: 0
-    },
-    pageOut: {
-        opacity: 0,
-        x: '100%'
-    }
-}
 
 export class Contact extends React.Component {
     state = {

@@ -1,23 +1,29 @@
 import React from "react";
 import './Home.css'
 import { motion } from "framer-motion";
-
-const pageVariants = {
-    pageInitial: {
-        opacity: 0,
-        x: '-100%'
-    },
-    pageAnimate: {
-        opacity: 1,
-        x: 0
-    },
-    pageOut: {
-        opacity: 0,
-        x: '100%'
-    }
-}
+import { pageVariants } from "../../variants";
+import Typed from "typed.js";
 
 export default class Home extends React.Component {
+
+    componentDidMount() {
+        const options = {
+            strings: ['<strong>an university student.</strong>^1000',
+                '<strong>an information engineer.</strong>^1000',
+                '<strong>a web developer.</strong>^1000'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            startDelay: 500,
+            backDelay: 700,
+            loop: true,
+            loopCount: Infinity
+        };
+        this.typed = new Typed(this.identity, options);
+    }
+
+    componentWillUnmount() {
+        this.typed.destroy();
+    }
 
     render() {
         return (
@@ -39,7 +45,14 @@ export default class Home extends React.Component {
                     transition={{ delay: .5 }}
                     className='author'
                 >
-                    I am Xianhua ZHOU.</motion.div>
+                    Xianhua ZHOU</motion.div>
+                <div style={{ color: '#a9a9a9', fontSize: '1.5rem', fontWeight: 200 }}>
+                    I am&nbsp;
+                    <span
+                        className='identity'
+                        ref={(el) => { this.identity = el }}
+                    />
+                </div>
             </motion.div>
         );
     }

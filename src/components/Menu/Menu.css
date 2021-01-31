@@ -19,16 +19,12 @@
 }
 
 .menu {
-    background-color: #161616;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 80%;
+    height: 95%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    background-image: linear-gradient(135deg, rgb(16, 16, 16), rgb(172, 21, 21));
+    align-items: flex-start;
 }
 
 .menu_small {
@@ -40,7 +36,6 @@
 }
 
 .logo {
-    margin-top: 5px;
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -60,16 +55,32 @@
 
 .itemlist {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: column;
-    height: 85%;
-    overflow: hidden;
+    height: 100%;
+}
+
+.itemlist::before {
+    width: 1px;
+    height: 40%;
+    margin: 0 auto;
+    content: '';
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.itemlist::after {
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+    content: '';
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .itemlist_small {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     position: absolute;
     top: 58px;
@@ -85,9 +96,6 @@
 .menubar_icon_small {
     height: 50px;
     width: 50px;
-    color: #fff;
-    line-height: 50px;
-    font-size: 1.7rem !important;
     cursor: pointer;
     position: relative;
 }
