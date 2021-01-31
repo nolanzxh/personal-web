@@ -1,8 +1,8 @@
 {
-  "name": "react-program",
+  "name": "presonal_web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nolanzxh.github.io/react-program",
+  "homepage": "http://nolanzxh.github.io/personal_web",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
