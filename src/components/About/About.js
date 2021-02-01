@@ -7,13 +7,14 @@ import { motion } from "framer-motion";
 import {
     pageVariants, hoverAboutPhoto, hoverAboutContent
 } from "../../variants";
+import { connect } from "react-redux";
 
-export default class About extends React.Component {
+export class About extends React.Component {
 
     render() {
         return (
             <motion.div
-                className='about_page'
+                className={`about_page ${this.props.isSmallScreen ? 'smallscreen_page' : null}`}
                 initial='pageInitial'
                 animate='pageAnimate'
                 exit='pageOut'
@@ -111,3 +112,9 @@ export default class About extends React.Component {
         );
     }
 }
+
+const mapStateToProps = (state) => ({
+    isSmallScreen: state.isSmallScreen,
+});
+
+export default connect(mapStateToProps)(About);

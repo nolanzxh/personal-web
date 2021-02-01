@@ -5,8 +5,9 @@ import photoUtc from "../../image/utc.jpg";
 import photoCfm from "../../image/cfm.png";
 import { motion } from "framer-motion";
 import { pageVariants, hoverResumePhoto } from "../../variants";
+import { connect } from "react-redux";
 
-export default class Resume extends React.Component {
+export class Resume extends React.Component {
 
     render() {
 
@@ -64,7 +65,7 @@ export default class Resume extends React.Component {
 
         return (
             <motion.div
-                className='resume_page'
+                className={`resume_page ${this.props.isSmallScreen ? 'smallscreen_page' : null}`}
                 initial='pageInitial'
                 animate='pageAnimate'
                 exit='pageOut'
@@ -112,3 +113,9 @@ export default class Resume extends React.Component {
         );
     }
 }
+
+const mapStateToProps = (state) => ({
+    isSmallScreen: state.isSmallScreen,
+});
+
+export default connect(mapStateToProps)(Resume);

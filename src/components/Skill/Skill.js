@@ -7,13 +7,14 @@ import {
     pageVariants, hoverSkillPhoto, hoverSkillContent, hoverTopBorder,
     hoverRightBorder, hoverBottomBorder, hoverLeftBorder
 } from "../../variants";
+import { connect } from "react-redux";
 
-export default class Skill extends React.Component {
+export class Skill extends React.Component {
 
     render() {
         return (
             <motion.div
-                className='skill_page'
+                className={`skill_page ${this.props.isSmallScreen ? 'smallscreen_page' : null}`}
                 initial='pageInitial'
                 animate='pageAnimate'
                 exit='pageOut'
@@ -65,3 +66,9 @@ export default class Skill extends React.Component {
         );
     }
 }
+
+const mapStateToProps = (state) => ({
+    isSmallScreen: state.isSmallScreen,
+});
+
+export default connect(mapStateToProps)(Skill);

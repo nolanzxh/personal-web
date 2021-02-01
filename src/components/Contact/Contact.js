@@ -3,6 +3,7 @@ import './Contact.css';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import { motion } from "framer-motion";
 import { pageVariants } from "../../variants";
+import { connect } from "react-redux";
 
 const mapStyles = {
     position: 'relative',
@@ -34,7 +35,7 @@ export class Contact extends React.Component {
     render() {
         return (
             <motion.div
-                className='contact_page'
+                className={`contact_page ${this.props.isSmallScreen ? 'smallscreen_page' : null}`}
                 initial='pageInitial'
                 animate='pageAnimate'
                 exit='pageOut'
@@ -109,6 +110,10 @@ export class Contact extends React.Component {
     }
 }
 
-export default GoogleApiWrapper({
+const mapStateToProps = (state) => ({
+    isSmallScreen: state.isSmallScreen,
+});
+
+export default connect(mapStateToProps)(GoogleApiWrapper({
     apiKey: 'AIzaSyD5nHI6LnQF2qinXK9R8S6s2oMmyJDTBac'
-})(Contact)
+})(Contact))

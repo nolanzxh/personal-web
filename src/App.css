@@ -8,7 +8,15 @@ body, #root, .App {
   position: absolute;
 }
 
-.App.smallmode {
+#root, .smallmode {
+  overflow: auto;
+}
+
+.smallmode {
   padding-top: 58px;
   position: absolute;
+}
+
+.smallscreen_page {
+  height: auto !important;
 }
