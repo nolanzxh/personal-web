@@ -52,12 +52,12 @@ export default class About extends React.Component {
                         </div>
                     </div>
                 </section>
-                <motion.span
+                <motion.div
                     className='separator'
                     initial={{ width: 0 }}
                     animate={{ width: '80%' }}
                     transition={{ duration: .3, delay: .4 }}
-                ></motion.span>
+                ></motion.div>
                 <section className='about_panel'>
                     <h2 className='about_photo_title'>Who I Am</h2>
                     <div className='about_photos'>

@@ -5,8 +5,10 @@ body, #root, .App {
   overflow: hidden;
   background-color: black;
   font-family: 'Gilrooy';
+  position: absolute;
 }
 
 .App.smallmode {
   padding-top: 58px;
+  position: absolute;
 }
