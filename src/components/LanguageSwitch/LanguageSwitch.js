@@ -15,7 +15,11 @@ export class LanguageSwitch extends React.Component {
 
     render() {
         return (
-            <div className='switch_container' data-lang={this.props.language} onClick={this.toggleLang}>
+            <div
+                className={`switch_container ${this.props.isSmallScreen ? 'small_switch' : null}`}
+                data-lang={this.props.language}
+                onClick={this.toggleLang}
+            >
                 <motion.div
                     layout
                     transition={{
