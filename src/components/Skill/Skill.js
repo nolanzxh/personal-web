@@ -8,6 +8,7 @@ import {
     hoverRightBorder, hoverBottomBorder, hoverLeftBorder
 } from "../../variants";
 import { connect } from "react-redux";
+import { FormattedMessage } from "react-intl";
 
 export class Skill extends React.Component {
 
@@ -51,8 +52,10 @@ export class Skill extends React.Component {
                         </motion.div>
                     </motion.div>
                     <div className='skill_content'>
-                        <h2 className='skill_title'>My Capacity</h2>
-                        <p className='skill_description'>Passionate about web development!</p>
+                        <h2 className='skill_title'>
+                            <FormattedMessage id="capacity" />
+                        </h2>
+                        <p className='skill_description'><FormattedMessage id='capacity_description' /></p>
                         <ProgressBar percentage={70} title='Linux'></ProgressBar>
                         <ProgressBar percentage={80} title='Git'></ProgressBar>
                         <ProgressBar percentage={60} title='jQuery'></ProgressBar>

@@ -8,6 +8,7 @@ import {
     pageVariants, hoverAboutPhoto, hoverAboutContent
 } from "../../variants";
 import { connect } from "react-redux";
+import { FormattedMessage } from "react-intl";
 
 export class About extends React.Component {
 
@@ -21,32 +22,32 @@ export class About extends React.Component {
                 variants={pageVariants}
                 transition={{ duration: .6, type: 'tween', ease: 'anticipate' }}
             >
-                <h1 className='about_texts_title'>About Me</h1>
+                <h1 className='about_texts_title'><FormattedMessage id='about_title' /></h1>
                 <section className='about_panel'>
                     <div className='about_texts'>
                         <div className='descriptions_container'>
                             <p className='descriptions'>
-                                Hello! My name is Xianhua ZHOU, a university student in UTC (University of Technology of Compiègne). I'm interested in web development, guitar and fitness.
-                                </p>
+                                <FormattedMessage id='about_description' />
+                            </p>
                         </div>
                         <div className='info_list'>
                             <section className='info_item_column'>
                                 <div className='info_item'>
-                                    <h3 className='info_item_title'>First Name:</h3>
+                                    <h3 className='info_item_title'><FormattedMessage id='first_name' />:</h3>
                                     <p className='info_item_content'>Xianhua</p>
                                 </div>
                                 <div className='info_item'>
-                                    <h3 className='info_item_title'>Last Name:</h3>
+                                    <h3 className='info_item_title'><FormattedMessage id='last_name' />:</h3>
                                     <p className='info_item_content'>ZHOU</p>
                                 </div>
                             </section>
                             <section className='info_item_column'>
                                 <div className='info_item'>
-                                    <h3 className='info_item_title'>Age:</h3>
+                                    <h3 className='info_item_title'><FormattedMessage id='age' />:</h3>
                                     <p className='info_item_content'>24</p>
                                 </div>
                                 <div className='info_item'>
-                                    <h3 className='info_item_title'>Residence:</h3>
+                                    <h3 className='info_item_title'><FormattedMessage id='residence' />:</h3>
                                     <p className='info_item_content'>France</p>
                                 </div>
                             </section>
@@ -60,7 +61,7 @@ export class About extends React.Component {
                     transition={{ duration: .3, delay: .4 }}
                 ></motion.div>
                 <section className='about_panel'>
-                    <h2 className='about_photo_title'>Who I Am</h2>
+                    <h2 className='about_photo_title'><FormattedMessage id='who_i_am' /></h2>
                     <div className='about_photos'>
                         <section className='about_photo_content'>
                             <motion.div className='photo_container' initial='rest' whileHover='hover' animate='rest'>
@@ -73,8 +74,8 @@ export class About extends React.Component {
                                     variants={hoverAboutPhoto}
                                 ></motion.img>
                                 <motion.div className='blur_photo_back' variants={hoverAboutContent}>
-                                    <h5 className='blur_photo_back_title'>Developer</h5>
-                                    of Full-Stack
+                                    <h5 className='blur_photo_back_title'><FormattedMessage id='developer' /></h5>
+                                    <FormattedMessage id='fullstack' />
                                 </motion.div>
                             </motion.div>
                             <motion.div className='photo_container' initial='rest' whileHover='hover' animate='rest'>
@@ -87,8 +88,8 @@ export class About extends React.Component {
                                     variants={hoverAboutPhoto}
                                 ></motion.img>
                                 <motion.div className='blur_photo_back' variants={hoverAboutContent}>
-                                    <h5 className='blur_photo_back_title'>Student</h5>
-                                    in UTC
+                                    <h5 className='blur_photo_back_title'><FormattedMessage id='student' /></h5>
+                                    <FormattedMessage id='in_utc' />
                                 </motion.div>
                             </motion.div>
                             <motion.div className='photo_container' initial='rest' whileHover='hover' animate='rest'>
@@ -101,8 +102,8 @@ export class About extends React.Component {
                                     variants={hoverAboutPhoto}
                                 ></motion.img>
                                 <motion.div className='blur_photo_back' variants={hoverAboutContent}>
-                                    <h5 className='blur_photo_back_title'>Traveller</h5>
-                                    follow heart
+                                    <h5 className='blur_photo_back_title'><FormattedMessage id='traveller' /></h5>
+                                    <FormattedMessage id='follow_heart' />
                                 </motion.div>
                             </motion.div>
                         </section>

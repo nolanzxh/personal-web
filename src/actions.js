@@ -5,3 +5,11 @@ export const handleWindowResize = (isSmallScreen) => dispatch => {
 export const handleMenubarDisplay = () => dispatch => {
     dispatch({ type: 'SWITCH_MENU_BAR' })
 };
+
+export const toggleAppLanguage = (lang) => dispatch => {
+    dispatch({ type: 'TOGGLE_LANGUAGE', language: lang })
+};
+
+export const initiateLocale = (lang) => {
+    return { type: 'TOGGLE_LANGUAGE', language: lang }
+};

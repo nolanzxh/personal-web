@@ -1,6 +1,7 @@
 import React from 'react';
 import "./MenuItem.css";
 import { withRouter } from 'react-router-dom';
+import { FormattedMessage } from "react-intl";
 
 export class MenuItem extends React.Component {
 
@@ -20,7 +21,9 @@ export class MenuItem extends React.Component {
                     <span className="iconfont menu_icon">{this.props.icon}</span>
                 </div>
                 <div
-                    className={isSmallScreen ? 'itemname_small' : 'itemname'}>{this.props.itemName}</div>
+                    className={isSmallScreen ? 'itemname_small' : 'itemname'}>
+                    <FormattedMessage id={this.props.itemName} />
+                </div>
             </div>
         )
     }

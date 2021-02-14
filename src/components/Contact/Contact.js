@@ -4,17 +4,24 @@ import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import { motion } from "framer-motion";
 import { pageVariants } from "../../variants";
 import { connect } from "react-redux";
+import { FormattedMessage } from "react-intl";
 
 const mapStyles = {
     position: 'relative',
 };
 
 export class Contact extends React.Component {
-    state = {
-        selectedPlace: {},
-        activeMarker: {},
-        showingInfoWindow: false
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedPlace: {},
+            activeMarker: {},
+            showingInfoWindow: false
+        }
     }
+
+
 
     onMarkerClick = (props, marker, e) =>
         this.setState({
@@ -44,7 +51,9 @@ export class Contact extends React.Component {
             >
                 <section className='contact_panel'>
                     <section className='map'>
-                        <div className='map_title'>My location</div>
+                        <div className='map_title'>
+                            <FormattedMessage id="location" />
+                        </div>
                         {<Map
                             google={this.props.google}
                             zoom={14}
@@ -73,24 +82,24 @@ export class Contact extends React.Component {
                         <div className='contact_item'>
                             <span className='iconfont contact_item_icon'>&#xe72f;</span>
                             <div className='contact_item_description'>
-                                <h2 className='contact_item_title'>Address</h2>
-                                <p className='contact_item_content'>France, Compiègne</p>
+                                <h2 className='contact_item_title'><FormattedMessage id="address" /></h2>
+                                <p className='contact_item_content'><FormattedMessage id="address_content" /></p>
                             </div>
                         </div>
 
                         <div className='contact_item'>
                             <span className='iconfont contact_item_icon'>&#xe612;</span>
                             <div className='contact_item_description'>
-                                <h2 className='contact_item_title'>Mail</h2>
-                                <p className='contact_item_content'>xianhua.zhou@etu.utc.fr</p>
+                                <h2 className='contact_item_title'><FormattedMessage id="mail" /></h2>
+                                <p className='contact_item_content'><FormattedMessage id="mail_content" /></p>
                             </div>
                         </div>
 
                         <div className='contact_item'>
                             <span className='iconfont contact_item_icon'>&#xe622;</span>
                             <div className='contact_item_description'>
-                                <h2 className='contact_item_title'>Phone</h2>
-                                <p className='contact_item_content'>+33 0636109977</p>
+                                <h2 className='contact_item_title'><FormattedMessage id="phone" /></h2>
+                                <p className='contact_item_content'><FormattedMessage id="phone_number" /></p>
                             </div>
                         </div>
 
@@ -98,8 +107,8 @@ export class Contact extends React.Component {
                         <div className='contact_item'>
                             <span className='iconfont contact_item_icon'>&#xe666;</span>
                             <div className='contact_item_description'>
-                                <h2 className='contact_item_title'>Others</h2>
-                                <p className='contact_item_content'>None</p>
+                                <h2 className='contact_item_title'><FormattedMessage id="others" /></h2>
+                                <p className='contact_item_content'><FormattedMessage id="others_content" /></p>
                             </div>
                         </div>
                     </div>

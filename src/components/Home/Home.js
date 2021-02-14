@@ -3,14 +3,12 @@ import './Home.css'
 import { motion } from "framer-motion";
 import { pageVariants } from "../../variants";
 import Typed from "typed.js";
+import { FormattedMessage, injectIntl } from "react-intl";
 
-export default class Home extends React.Component {
+export class Home extends React.Component {
 
     componentDidMount() {
-        const options = {
-            strings: ['<strong>an university student.</strong>^1000',
-                '<strong>an information engineer.</strong>^1000',
-                '<strong>a web developer.</strong>^1000'],
+        const baseOptions = {
             typeSpeed: 50,
             backSpeed: 40,
             startDelay: 500,
@@ -18,6 +16,21 @@ export default class Home extends React.Component {
             loop: true,
             loopCount: Infinity
         };
+        let options = {};
+        if (this.props.intl.locale === 'en')
+            options = {
+                ...baseOptions,
+                strings: ['<strong>an university student.</strong>^1000',
+                    '<strong>an information engineer.</strong>^1000',
+                    '<strong>a web developer.</strong>^1000'],
+            }
+        else if (this.props.intl.locale === 'fr')
+            options = {
+                ...baseOptions,
+                strings: ["<strong>un étudiant de l'UTC.</strong>^1000",
+                    '<strong>un ingénieur informatique.</strong>^1000',
+                    '<strong>un développeur web.</strong>^1000'],
+            }
         this.typed = new Typed(this.identity, options);
     }
 
@@ -45,9 +58,10 @@ export default class Home extends React.Component {
                     transition={{ delay: .5 }}
                     className='author'
                 >
-                    Xianhua ZHOU</motion.div>
+                    Xianhua ZHOU
+                </motion.div>
                 <div style={{ color: '#a9a9a9', fontSize: '1.5rem', fontWeight: 200 }}>
-                    I am&nbsp;
+                    <FormattedMessage id="present" />&nbsp;
                     <span
                         className='identity'
                         ref={(el) => { this.identity = el }}
@@ -57,3 +71,5 @@ export default class Home extends React.Component {
         );
     }
 }
+
+export default injectIntl(Home);

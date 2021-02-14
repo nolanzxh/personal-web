@@ -1,0 +1,43 @@
+.switch_container {
+    width: 60px;
+    height: 20px;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: flex-start;
+    /* border: solid 1px rgb(169, 169, 169); */
+}
+
+.lang_option {
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: .8rem;
+    line-height: 20px;
+    z-index: 102;
+}
+
+.lang_option[data-lang="FR"] {
+    left: 50%;
+}
+
+.lang_option[data-lang="EN"] {
+    left: 0;
+}
+
+.selected {
+    background-color: #cf000f;
+    width: 50%;
+    height: 20px;
+    z-index: 101;
+}
+
+.switch_container[data-lang="FR"] {
+    justify-content: flex-end;
+}

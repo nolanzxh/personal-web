@@ -1,11 +1,14 @@
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from "redux";
 
+let storage = window.localStorage;
+
 function rootReducer(state, action) {
-    const { isSmallScreen } = action;
+    const { isSmallScreen, language } = action;
     switch (action.type) {
         case 'WINDOW_RESIZE':
             return {
+                ...state,
                 isSmallScreen: isSmallScreen,
                 showMenuBar: !isSmallScreen
             };
@@ -14,6 +17,12 @@ function rootReducer(state, action) {
                 ...state,
                 showMenuBar: !state.showMenuBar
             };
+        case 'TOGGLE_LANGUAGE':
+            storage.setItem('language', language);
+            return {
+                ...state,
+                languageValue: language
+            }
         default:
             return state;
     }
@@ -21,5 +30,6 @@ function rootReducer(state, action) {
 
 export const store = createStore(rootReducer, {
     isSmallScreen: false,
-    showMenuBar: true
+    showMenuBar: true,
+    languageValue: ''
 }, applyMiddleware(thunk));
