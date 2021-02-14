@@ -35,7 +35,7 @@ const messages = {
     },
     fr: {
         'present': "Je suis",
-        'about_description': "Bonjour! Je m'appelle Xianhua ZHOU, étudiant de l'UTC (Université de Technology de Compiègne). J'adore le développement web, la guitare et la gymnastique.",
+        'about_description': "Bonjour! Je m'appelle Xianhua ZHOU, étudiant de l'UTC (Université de Technologie de Compiègne). J'adore le développement web, la guitare et la gymnastique.",
         'first_name': "Prénom",
         'last_name': "Nom",
         'age': "Age",

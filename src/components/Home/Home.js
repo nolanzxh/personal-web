@@ -5,32 +5,32 @@ import { pageVariants } from "../../variants";
 import Typed from "typed.js";
 import { FormattedMessage, injectIntl } from "react-intl";
 
+const typedTexts = {
+    en: ['<strong>an university student.</strong>^1000',
+        '<strong>an information engineer.</strong>^1000',
+        '<strong>a web developer.</strong>^1000'],
+    fr: ["<strong>un étudiant de l'UTC.</strong>^1000",
+        '<strong>un ingénieur informatique.</strong>^1000',
+        '<strong>un développeur web.</strong>^1000'],
+}
+
 export class Home extends React.Component {
 
     componentDidMount() {
-        const baseOptions = {
+        const options = {
             typeSpeed: 50,
             backSpeed: 40,
             startDelay: 500,
             backDelay: 700,
             loop: true,
-            loopCount: Infinity
+            loopCount: Infinity,
+            onStringTyped: (arrayPos, self) => {
+                self.strings = typedTexts[this.props.intl.locale]
+            },
+            onBegin: (self) => {
+                self.strings = typedTexts[this.props.intl.locale]
+            }
         };
-        let options = {};
-        if (this.props.intl.locale === 'en')
-            options = {
-                ...baseOptions,
-                strings: ['<strong>an university student.</strong>^1000',
-                    '<strong>an information engineer.</strong>^1000',
-                    '<strong>a web developer.</strong>^1000'],
-            }
-        else if (this.props.intl.locale === 'fr')
-            options = {
-                ...baseOptions,
-                strings: ["<strong>un étudiant de l'UTC.</strong>^1000",
-                    '<strong>un ingénieur informatique.</strong>^1000',
-                    '<strong>un développeur web.</strong>^1000'],
-            }
         this.typed = new Typed(this.identity, options);
     }
 
