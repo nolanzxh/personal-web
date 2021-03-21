@@ -22,8 +22,8 @@ const experienceInfos = {
     en: [
         {
             pseudo: 'MEMORAE', title: 'Developement of the MEMORAe web platform',
-            period: 'August 2020 - January 2021', place: 'UTC, Compiègne',
-            desc: "Analysis, correction and addition of functionalities of the MEMORAe web platform."
+            period: 'August 2020 - March 2021', place: 'UTC, Compiègne',
+            desc: "Analysis, correction and addition of functionalities of the MEMORAe web platform, implement administration system, code clean."
         },
         {
             pseudo: 'CFM', title: 'Full-Stack intership in Capital Fund Management',
@@ -44,8 +44,8 @@ const experienceInfos = {
     fr: [
         {
             pseudo: 'MEMORAE', title: 'Développement web de la plateforme MEMORAe',
-            period: 'Août 2020 - Janvier 2021', place: 'UTC, Compiègne',
-            desc: "Analyse, correction et amélioration des fonctionnalités de la plateforme MEMORAe."
+            period: 'Août 2020 - Mars 2021', place: 'UTC, Compiègne',
+            desc: "Analyse, correction et amélioration des fonctionnalités de la plateforme MEMORAe, implémentation du système d'administration, nettoyage du code."
         },
         {
             pseudo: 'CFM', title: 'Stage Full-Stack chez Capital Fund Management',
