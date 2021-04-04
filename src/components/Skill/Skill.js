@@ -63,6 +63,7 @@ export class Skill extends React.Component {
                         <ProgressBar percentage={70} title='React'></ProgressBar>
                         <ProgressBar percentage={90} title='SQL'></ProgressBar>
                         <ProgressBar percentage={70} title='Python'></ProgressBar>
+                        <ProgressBar percentage={25} title='J2EE'></ProgressBar>
                     </div>
                 </section>
             </motion.div>
