@@ -49,7 +49,7 @@ const messages = {
         'traveller': "Voyageur",
         'follow_heart': "suivant mon coeur",
         'experience': "Expérience",
-        'capacity': "Mes Compétances",
+        'capacity': "Mes Compétences",
         'capacity_description': "Passionné par le développement web!",
         'location': "Ma position",
         'address': "Adresse",
@@ -62,7 +62,7 @@ const messages = {
         'others_content': "Non",
         'home': "Home",
         'resume': "Résumé",
-        'skill': "Compétance",
+        'skill': "Compétence",
         'contact': 'Contact',
         'about': 'Présentation',
         'education': "Education"
