@@ -2,7 +2,7 @@
   "name": "personal_web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nolanzxh.github.io/personal-web",
+  "homepage": "http://nolanzxh.xyz",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
