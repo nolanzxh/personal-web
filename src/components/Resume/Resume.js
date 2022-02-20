@@ -3,6 +3,7 @@ import './Resume.css'
 import '../../icon/iconfont.css';
 import photoUtc from "../../image/utc.jpg";
 import photoCfm from "../../image/cfm.png";
+import photoScorf from "../../image/scorf.png";
 import { motion } from "framer-motion";
 import { pageVariants, hoverResumePhoto } from "../../variants";
 import { connect } from "react-redux";
@@ -20,6 +21,16 @@ const educationInfos = {
 
 const experienceInfos = {
     en: [
+        {
+            pseudo: 'ScorfCDD', title: 'Web developer in Scorf.io',
+            period: 'February 2022 - ', place: 'Scorf.io, Paris',
+            desc: "Maintenance of application, implementation of administration system."
+        },
+        {
+            pseudo: 'ScorfStage', title: 'Internship developement of web in Scorf.io',
+            period: 'August 2021 - February 2022', place: 'Scorf.io, Paris',
+            desc: "Implementation of new features of the app, performance improvement, writing E2E test code, implementation of REST APIs with NodeJs."
+        },
         {
             pseudo: 'MEMORAE', title: 'Developement of the MEMORAe web platform',
             period: 'August 2020 - March 2021', place: 'UTC, Compiègne',
@@ -42,6 +53,16 @@ const experienceInfos = {
         }
     ],
     fr: [
+        {
+            pseudo: 'ScorfCDD', title: "Développeur de l'application Business Intelligence",
+            period: 'Février 2022 - ', place: 'Scorf.io, Paris',
+            desc: "Maintenance de l'application, implémentation de système d'administration."
+        },
+        {
+            pseudo: 'ScorfStage', title: "Stage Développement web chez Scorf.io",
+            period: 'Août 2021 - Février 2022', place: 'Scorf.io, Paris',
+            desc: "Implémentaion des nouvelles fonctionnalités de l'app, amélioration de la performance, rédaction du code de test E2E, implémentation des APIs REST avec NodeJs."
+        },
         {
             pseudo: 'MEMORAE', title: 'Développement web de la plateforme MEMORAe',
             period: 'Août 2020 - Mars 2021', place: 'UTC, Compiègne',
@@ -135,13 +156,23 @@ export class Resume extends React.Component {
                             {experiences}
                         </div>
                     </div>
-                    <div className='experience_photo'>
-                        <motion.img
-                            whileHover={hoverResumePhoto}
-                            src={photoCfm}
-                            alt=''
-                            width="100%"
-                        />
+                    <div className='experience_photos'>
+                        <div className='experience_photo'>
+                            <motion.img
+                                whileHover={hoverResumePhoto}
+                                src={photoScorf}
+                                alt=''
+                                width="100%"
+                            />
+                        </div>
+                        <div className='experience_photo'>
+                            <motion.img
+                                whileHover={hoverResumePhoto}
+                                src={photoCfm}
+                                alt=''
+                                width="100%"
+                            />
+                        </div>
                     </div>
                 </section>
             </motion.div>

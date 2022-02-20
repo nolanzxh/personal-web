@@ -44,7 +44,7 @@ export class About extends React.Component {
                             <section className='info_item_column'>
                                 <div className='info_item'>
                                     <h3 className='info_item_title'><FormattedMessage id='age' />:</h3>
-                                    <p className='info_item_content'>24</p>
+                                    <p className='info_item_content'>25</p>
                                 </div>
                                 <div className='info_item'>
                                     <h3 className='info_item_title'><FormattedMessage id='residence' />:</h3>
