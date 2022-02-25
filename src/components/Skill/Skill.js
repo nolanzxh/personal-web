@@ -58,8 +58,8 @@ export class Skill extends React.Component {
                         <p className='skill_description'><FormattedMessage id='capacity_description' /></p>
                         <ProgressBar percentage={70} title='Linux'></ProgressBar>
                         <ProgressBar percentage={80} title='Git'></ProgressBar>
-                        <ProgressBar percentage={55} title='Devops'></ProgressBar>
-                        <ProgressBar percentage={70} title='Cypress'></ProgressBar>
+                        <ProgressBar percentage={60} title='Devops'></ProgressBar>
+                        <ProgressBar percentage={75} title='Cypress'></ProgressBar>
                         <ProgressBar percentage={90} title='React'></ProgressBar>
                         <ProgressBar percentage={85} title='SQL'></ProgressBar>
                         <ProgressBar percentage={70} title='Python'></ProgressBar>
