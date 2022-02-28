@@ -32,6 +32,11 @@ const experienceInfos = {
             desc: "Implementation of new features of the app, performance improvement, writing E2E test code, implementation of REST APIs with NodeJs."
         },
         {
+            pseudo: 'ProjetsUV', title: "School projects related to web application with security",
+            period: 'February 2021 - June 2021', place: 'UTC, Compiègne',
+            desc: "Realization of online chat rooms using JAVAEE and the WebSocket protocol, implementation of a security application allowing the simulation of bank transfers."
+        },
+        {
             pseudo: 'MEMORAE', title: 'Developement of the MEMORAe web platform',
             period: 'August 2020 - March 2021', place: 'UTC, Compiègne',
             desc: "Analysis, correction and addition of functionalities of the MEMORAe web platform, implement administration system, code clean."
@@ -62,6 +67,11 @@ const experienceInfos = {
             pseudo: 'ScorfStage', title: "Stage Développement web chez Scorf.io",
             period: 'Août 2021 - Février 2022', place: 'Scorf.io, Paris',
             desc: "Implémentaion des nouvelles fonctionnalités de l'app, amélioration de la performance, rédaction du code de test E2E, implémentation des APIs REST avec NodeJs."
+        },
+        {
+            pseudo: 'ProjetsUV', title: "Projets UV liés à l'application web en sécurité",
+            period: 'Février 2021 - Juin 2021', place: 'UTC, Compiègne',
+            desc: "Réalisation des salles de discussion en ligne à l'aide de JAVAEE et le protocole WebSocket, implémentation d'une application en sécurité permettant de faire de la simulation du virement bancaire."
         },
         {
             pseudo: 'MEMORAE', title: 'Développement web de la plateforme MEMORAe',
